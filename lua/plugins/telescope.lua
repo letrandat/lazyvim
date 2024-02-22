@@ -8,6 +8,13 @@ return {
       function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
       desc = "Find Plugin File",
     },
+    {
+      "<C-p>",
+      function()
+        require("telescope.builtin").find_files({ cwd = false })
+      end,
+      desc = "trandat: Find Files (cwd)",
+    },
   },
   opts = {
     defaults = {
