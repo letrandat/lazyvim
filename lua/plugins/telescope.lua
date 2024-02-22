@@ -15,6 +15,13 @@ return {
       end,
       desc = "trandat: Find Files (cwd)",
     },
+    {
+      "<C-f>",
+      function()
+        require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })
+      end,
+      desc = "trandat: grep (cwd)",
+    },
   },
   opts = {
     defaults = {
