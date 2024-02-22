@@ -11,7 +11,6 @@ return {
   },
   opts = {
     defaults = {
-      layout_config = { prompt_position = "top" },
       -- remove as much from the path as possible to only show
       -- the difference between the displayed paths.
       path_display = { "smart" },
