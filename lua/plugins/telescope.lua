@@ -9,13 +9,6 @@ return {
       desc = "Find Plugin File",
     },
     {
-      "<C-p>",
-      function()
-        require("telescope.builtin").find_files({ cwd = false })
-      end,
-      desc = "trandat: Find Files (cwd)",
-    },
-    {
       "<C-f>",
       function()
         require("telescope.builtin").live_grep({ default_text = vim.fn.expand("<cword>") })
